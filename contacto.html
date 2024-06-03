@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Contacto</title>
+    <style>
+        .form-section {
+            background-color: #c2926f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 400px; /* Ajusta este valor según sea necesario */
+            padding: 20px;
+            background-color: #c2926f; /* Mantener el color de fondo */
+            border-radius: 8px;
+        }
+        .no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .no-gutters > .col,
+        .no-gutters > [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .img-container {
+            display: flex;
+            align-items: center;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-container {
+            position: relative;
+        }
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.5em;
+            color: #000;
+            max-width: 80%; /* Ajusta el ancho del texto */
+        }
+        .no-margin {
+            margin: 0; /* Elimina el margen superior e inferior */
+            padding: 0; /* Elimina el padding superior e inferior */
+        }
+        @media (max-width: 1024px) {
+         .overlay-text {
+             font-size: 1em; /* Cambia el tamaño de la fuente en pantallas más pequeñas */
+            max-width: 90%; /* Ajusta el ancho del texto en pantallas más pequeñas */
+         }
+        }
+        .btn-color {
+            background-color: #6c4f34; /* Cambia el color de fondo al pasar el mouse */
+            color: white; /* Cambia el color del texto al pasar el mouse */
+            
+        }
+        
+        .btn-color:hover {
+            background-color: white; /* Color de fondo inicial */
+            color: #6c4f34; /* Color de texto inicial */
+            border: 2px solid #6c4f34; /* Borde inicial */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row no-gutters no-margin">
+            <div class="col-lg-6 img-container">
+                <img src="img/frappeContact.avif" alt="Descripción de la imagen">
+            </div>
+            <div class="col-lg-6 form-section">
+                <div class="form-container">
+                    <form action="/submit" method="post">
+                        <h3>¿Dudas, sugerencias o comentarios?</h3>
+                        <p>Estamos para ayudarte. <br>
+                            Llena el siguiente formulario y nos comunicaremos contigo lo antes posible.</p>
+                        <div class="form-group">
+                            <label for="name">Nombre*</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje*</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div> <br>
+                        <button type="submit" class="btn btn-color">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="image-container no-margin position-relative">
+            <img src="img/fondofacturacion.jpg" alt="Imagen de ejemplo" class="img-fluid">
+            <div class="row mt-6 offset-md-2 top-50 start-50">
+                <div class="overlay-text"> <h1><strong>FACTURACION</strong></h1>
+                    <p>
+                        La facturación se elabora en cada Franquicia dónde se efectuó el consumo. <br>
+                        Franquicia Maestra NO factura. <br>
+                        ¿Dudas? <br>
+                        Contáctanos <br>
+                        <a href="mailto:correo@ejemplo.com">elizabeth@gourmet.mx.com</a> <br> <br>
+                        <a href="https://rodriguez-lopez-areli-examen-u3.netlify.app/" class="btn btn-color">Enviar</a>
+                        
+                    </p>
+                </div>
+
+            </div>
+           
+           
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

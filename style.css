@@ -1,0 +1,48 @@
+
+html{
+    box-sizing: border-box;
+}
+*
+,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-family: 'poppins', sans-serif;  
+}
+
+.navbar-brand {
+    letter-spacing: 3px;
+    color: #c24244;
+  }
+  
+  .navbar-brand:hover {
+      color: #c24244;
+  }
+
+  .texto-superpuesto{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .gif-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .carousel-item img{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+  }
